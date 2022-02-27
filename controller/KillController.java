@@ -51,7 +51,7 @@ public class KillController {
         String command = "";
 
         if(os().contains("Windows")) {
-            command = "TASKKILL /PID " + pid;
+            command = "TASKKILL /F /PID " + pid;
         }
         
         if(os().contains("Linux")) {
@@ -65,7 +65,7 @@ public class KillController {
         String command = "";
 
         if(os().contains("Windows")) {
-            command = "TASKKILL /IM " + nome;
+            command = "TASKKILL /F /IM " + nome;
         }
         
         if(os().contains("Linux")) {
